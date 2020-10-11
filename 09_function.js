@@ -3,6 +3,7 @@
 
 // function with no parameter
 function name() {
+  // logic
   console.log('Hello there');
 }
 
