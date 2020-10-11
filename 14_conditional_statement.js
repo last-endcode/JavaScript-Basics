@@ -34,3 +34,24 @@ if (value) {
 } else {
   console.log('five is bigger than 2');
 }
+
+// example again
+const num1 = 10;
+const num2 = 10;
+const result = num1 >= num2;
+
+if (num1 > num2) {
+  console.log('num1 is bigger than num2');
+} else if (result) {
+  console.log('num1 and num2 is equal');
+}
+
+// != is originall true will false,
+// and if originally false will true
+const name = false;
+
+if (!name) {
+  console.log('hellooo..');
+} else {
+  console.log('not print cz !=');
+}
