@@ -15,6 +15,11 @@ function morning(name){
     return `Good morning ${name}`;
 }
 
+function afternoon(name){
+    return `Good afternoon ${name}`;
+}
+
+
 // higherorder function
 function greet(name, cb){
     const myName='Nakamura Ekuichi';
@@ -26,6 +31,8 @@ function greet(name, cb){
 // remember callback function not invoke morning()
 //cz already exist in higher older function
 greet('Daisuke', morning);
+greet('Miwa', afternoon);
+
 
 // function greetMorning(name){
 //     const myName = 'john';
