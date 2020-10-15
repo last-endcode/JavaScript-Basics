@@ -2,21 +2,23 @@
 // doesn't return new array
 // method executes a provided function once for each array element
 
-const memberSHP = [
-  { name: 'lutfi', age: 20, position: 'raja bajak laut' },
-  { name: 'zoro', age: 25, position: 'wakil raja bajak laut' },
-  { name: 'sanji', age: 24, position: 'chef SHP' },
+const people = [
+  { name: 'bobo', born: 1987, position: 'developer' },
+  { name: 'peter', born: 1989, position: 'designer' },
+  { name: 'sussy', born: 1975, position: 'the boss' },
 ];
 
-//disini kita bisa memanggil dgn 2 cara..
+// let person = function (item) {
+//   console.log(item);
+// };
 
-function showMember(memberBajakLaut) {
-  console.log(memberBajakLaut.position.toUpperCase());
-}
+// people.forEach(person);
 
-// memberSHP.forEach(showMember);
-
-// cara ke-2 mnggunakan annonymous function
-memberSHP.forEach(function (items) {
-  console.log(items.position.toLowerCase());
+/* u can callback function with directly use annonymous function */
+people.forEach(function (item) {
+  let total = 2020;
+  total -= item.born;
+  console.log(
+    `${item.name} with position ${item.position} now is ${total} years old`
+  );
 });
