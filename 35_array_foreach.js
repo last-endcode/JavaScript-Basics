@@ -8,13 +8,19 @@ const people = [
   { name: 'sussy', born: 1975, position: 'the boss' },
 ];
 
-// let person = function (item) {
-//   console.log(item);
+// remember this method not return 3 new array
+// let coy = people.forEach(function () {});
+// console.log(coy); //undefined
+
+// the way 1
+// let coy = function (person) {
+//   console.log(person.name);
 // };
 
-// people.forEach(person);
+// people.forEach(coy);
 
-/* u can callback function with directly use annonymous function */
+// the way 2
+// u can callback function with directly use annonymous function
 people.forEach(function (item) {
   let total = 2020;
   total -= item.born;
