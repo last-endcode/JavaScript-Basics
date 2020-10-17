@@ -11,10 +11,11 @@ const produk = [
   { name: 'sony', model: 'android', price: 40000 },
 ];
 
-let result = produk.reduce(function (acc, current) {
-  console.log(acc + current.price);
+let result = produk.reduce(function (acc, currentItems) {
+  console.log(`total : ${acc} ${currentItems.price}`);
+  acc += currentItems.price;
   return acc;
-});
+}, 100000);
 
 console.log(result);
 
