@@ -15,6 +15,10 @@
 // const result = Math.ceil(Math.random() * 10);
 // console.log(result); //here ceil never 0, if u have floor please add + 1
 
-// min max
-const result = Math.max(1, 8, 0, 9);
-console.log(result);
+// // min max
+// const result = Math.max(1, 8, 0, 9);
+// console.log(result); //9
+
+// // min max
+// const result = Math.min(1, 8, 0, 9);
+// console.log(result); //0
